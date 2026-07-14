@@ -5,7 +5,7 @@ on:
 
 jobs:
   sonatype:
-    uses: fortify-presales/platform-workflows/.github/workflows/reusable-sonatype-sca.yml@v1
+    uses: fortify-presales/platform-workflows/.github/workflows/reusable-sonatype-sca.yml@v1.1.4
     with:
       application_id: ${{ github.repository }}
       organization_id: ${{ vars.LIFECYCLE_ORGANIZATION_ID != '' && vars.LIFECYCLE_ORGANIZATION_ID || github.repository_owner }}
