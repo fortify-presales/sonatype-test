@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sonatype-test:
+  sonatype:
     uses: fortify-presales/platform-workflows/.github/workflows/reusable-sonatype-sca.yml@v1
     with:
       application_id: ${{ github.repository }}
